@@ -20,6 +20,7 @@
 .nav__link{
   text-decoration: none;
   color: $text-dark;
+  cursor: pointer;
 
   &:hover {
     text-decoration: overline;

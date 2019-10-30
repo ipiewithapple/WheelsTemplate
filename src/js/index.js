@@ -19,7 +19,8 @@ menuBtn.addEventListener('click', () => {
 // Smooth scrolling
 
 navLinks.forEach((el) => {
-  el.addEventListener('click', () => {
+  el.addEventListener('click', (evt) => {
+    evt.preventDefault();
     const href = el.textContent.replace(' ', '-');
     document.querySelector(`#${href}`).scrollIntoView({block: "center", behavior: "smooth"});
     burger.classList.remove('menu__burger--close');
