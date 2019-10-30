@@ -1,0 +1,40 @@
+.menu{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.menu__title {
+  margin-right: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.menu__burger{
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: $light;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $light;
+    border-radius: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $light;
+    border-radius: 10px;
+  }
+}

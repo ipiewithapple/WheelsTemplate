@@ -1,16 +1,37 @@
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800&display=swap');
 // Mixins
-
-// Global
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-// Imports
 // Variables
 @import "variables.scss";
-// Blocks
+// Global
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: $text-dark;
+  letter-spacing: 0.125rem;
+}
+
+
+// Other
+.logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+// Imports
+@import "blocks/nav.scss";
 @import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/about-us.scss";

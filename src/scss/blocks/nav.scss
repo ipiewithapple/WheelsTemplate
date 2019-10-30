@@ -1,0 +1,27 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+}
+
+.nav__list {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__item{
+  text-transform: uppercase;
+}
+
+.nav__link{
+  text-decoration: none;
+  color: $text-dark;
+
+  &:hover {
+    text-decoration: overline;
+  }
+}

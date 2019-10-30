@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -6,5 +7,24 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Wheels
   body
+    include mixins.pug
     header.header
-      h1.logo wheels
+      nav.nav.header__nav
+        +nav
+      .header__top
+        span.logo wheels
+        .menu
+          span.menu__title menu
+          .menu__burger
+      .header__middle
+        h1.header__title Welcome to wheels
+        blockquote.header__blackquote
+          p Your free psd template,<br>perfect for your next big idea
+          cite by Pawel Betkowski
+      .header__bottom
+        button.header__mouse
+    nav.nav
+      +nav
+    section.about-us#about-us
+
+

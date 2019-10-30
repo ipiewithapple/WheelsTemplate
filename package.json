@@ -37,8 +37,6 @@
     "IE 10"
   ],
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
+    "@fortawesome/fontawesome-free": "^5.11.2"
   }
 }
