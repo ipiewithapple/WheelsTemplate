@@ -25,6 +25,7 @@
     height: 3px;
     background-color: $light;
     border-radius: 10px;
+    transition: .3s ease-in-out;
   }
 
   &::before {
@@ -36,5 +37,23 @@
     height: 3px;
     background-color: $light;
     border-radius: 10px;
+    transition: .3s ease-in-out;
+  }
+
+  &--close {
+    background: none;
+
+
+    &::before {
+      bottom: 0;
+      transform: rotate(45deg);
+
+    }
+
+    &::after{
+      top: 0;
+      transform: rotate(-45deg);
+
+    }
   }
 }

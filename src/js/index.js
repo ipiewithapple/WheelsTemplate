@@ -6,21 +6,17 @@ import '@fortawesome/fontawesome-free/js/brands'
 
 // Header menu
 
-const burgerBtn = document.querySelector('.menu');
+const menuBtn = document.querySelector('.menu');
 const headerNav = document.querySelector('.header__nav');
 const navLinks = document.querySelectorAll('.nav__link');
+const burger = document.querySelector('.menu__burger');
 
-burgerBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
   headerNav.classList.toggle('header__nav--opened');
+  burger.classList.toggle('menu__burger--close');
 })
 
-// navLinks.forEach((el) => {
-//   el.addEventListener('click', () => {
-//     headerNav.classList.remove('header__nav--opened');
-//   })
-// })
-
-// Scroll
+// Smooth scrolling
 
 navLinks.forEach((el) => {
   el.addEventListener('click', () => {

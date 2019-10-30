@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 5% 10%;
   height: 100vh;
+  box-sizing: border-box;
   background: url("../img/bg_header.jpg") no-repeat center center;
   background-size: cover;
   background-color: #000000;
@@ -51,7 +52,7 @@
 }
 
 .header__bottom {
-  align-self: center;
+  position: relative;
 }
 
 .header__title {
@@ -72,9 +73,12 @@
 }
 
 .header__mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
   width: 50px;
   height: 70px;
   background: url("../img/mouse_icon.png") no-repeat center center;
-  cursor: pointer;
   border: none;
+  animation: mouse 1s infinite;
 }
