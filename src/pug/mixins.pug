@@ -6,10 +6,12 @@ mixin nav
     each el in navItems
       li.nav__item: a.nav__link= el
 
+- const bikeItems = [{name:'orangez', url:'img/orange_bike.jpg'},{name:'green devil', url:'img/green_bike.jpg'},{name:'blue lagoon', url:'img/blue_bike.jpg'},{name:'pink lady', url:'img/pink_bike.jpg'},{name:'purple rain', url:'img/purple_bike.jpg'},{name:'the mist', url:'img/grey_bike.jpg'}]
 
 mixin productItem
-  .product__item
-    img.product__img
-    span.product__bike
-    span.product__price $399
-    span.product__link
+  each bike in bikeItems
+    .product__item
+      img.product__img(src= bike.url)
+      span.product__bike= bike.name
+      span.product__price $399
+      span.product__link Learn more

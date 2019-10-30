@@ -9,7 +9,8 @@
 
   &--sticky{
     z-index: 10;
-    position: fixed;
+    position: sticky;
+    padding: 15px 10%;
     box-sizing: border-box;
     width: 100%;
     top: 0;

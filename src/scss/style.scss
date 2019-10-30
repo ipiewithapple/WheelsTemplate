@@ -32,6 +32,11 @@ img {
   height: auto;
 }
 
+section {
+  padding: 70px 15%;
+  box-sizing: border-box;
+}
+
 // Other
 .logo {
   font-size: 1.9rem;
@@ -44,7 +49,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 15%;
   margin: 0 auto;
 }
 
@@ -55,3 +59,4 @@ img {
 @import "blocks/menu.scss";
 @import "blocks/about-us.scss";
 @import "blocks/statistics.scss";
+@import "blocks/products.scss";
