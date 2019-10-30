@@ -14,8 +14,19 @@ burgerBtn.addEventListener('click', () => {
   headerNav.classList.toggle('header__nav--opened');
 })
 
+// navLinks.forEach((el) => {
+//   el.addEventListener('click', () => {
+//     headerNav.classList.remove('header__nav--opened');
+//   })
+// })
+
+// Scroll
+
 navLinks.forEach((el) => {
   el.addEventListener('click', () => {
+    const href = el.textContent.replace(' ', '-');
+    document.querySelector(`#${href}`).scrollIntoView({block: "center", behavior: "smooth"});
     headerNav.classList.remove('header__nav--opened');
   })
 })
+
