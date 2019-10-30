@@ -35,8 +35,5 @@
     "last 2 version",
     "> 1%",
     "IE 11"
-  ],
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2"
-  }
+  ]
 }
