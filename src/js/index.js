@@ -22,6 +22,7 @@ navLinks.forEach((el) => {
   el.addEventListener('click', () => {
     const href = el.textContent.replace(' ', '-');
     document.querySelector(`#${href}`).scrollIntoView({block: "center", behavior: "smooth"});
+    burger.classList.remove('menu__burger--close');
     headerNav.classList.remove('header__nav--opened');
   })
 })
