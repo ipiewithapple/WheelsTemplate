@@ -1,19 +1,16 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800&display=swap');
-// Mixins
+
 // Variables
 @import "variables.scss";
+
 // Animation
 @import "animation.scss";
+
 // Global
 * {
   margin: 0;
   padding: 0;
-
-  &::selection {
-    background: $text-dark;
-    color: $text-light;
-  }
 }
 
 body {
@@ -57,3 +54,4 @@ img {
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
 @import "blocks/about-us.scss";
+@import "blocks/statistics.scss";

@@ -10,6 +10,11 @@
   background-size: cover;
   background-color: #000000;
   color: $text-light;
+
+  & *::selection {
+    background: $text-light;
+    color: $text-dark;
+  }
 }
 
 .header__nav {

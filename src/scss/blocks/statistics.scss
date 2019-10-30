@@ -1,0 +1,40 @@
+.statistics {
+  padding: 95px 0 105px;
+  color: $text-light;
+  background: url("../img/bg_statistics.jpg") no-repeat center center;
+  background-size: cover;
+
+  & *::selection {
+    background: $text-light;
+    color: $text-dark;
+  }
+}
+
+.statistics__subtitle {
+  margin-top: 20px;
+  margin-bottom: 85px;
+}
+
+.statistics__list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics__fact-count {
+  font-size: 4rem;
+
+}
+
+.statistics__fact {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
