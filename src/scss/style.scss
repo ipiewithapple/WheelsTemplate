@@ -1,8 +1,16 @@
-// mixins
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800&display=swap');
+// Mixins
 
-// global
+// Global
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
-// imports
-// variables
+// Imports
+// Variables
 @import "variables.scss";
-// blocks
+// Blocks
+@import "blocks/header.scss";
