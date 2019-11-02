@@ -24,10 +24,18 @@ $(window).on('scroll', () => {
 // Smooth scrolling
 
 $navLinks.each(function () {
-  $(this).on('click', () =>{
-
+  $(this).on('click', (evt) => {
+    let dest = $($(this).attr('href')).offset().top;
+    console.log(dest);
+    evt.preventDefault();
+    $('html').animate({
+      scrollTop: dest
+    }, 'slow')
+    $headerNav.removeClass('header__nav--opened');
+    $burger.removeClass('menu__burger--close');
   })
 });
+
 
 
 
