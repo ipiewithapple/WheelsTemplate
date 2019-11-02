@@ -4,7 +4,7 @@ mixin nav
   span.logo wheels
   ul.nav__list
     each el in navItems
-      li.nav__item: a.nav__link= el
+      li.nav__item: a.nav__link(href= `#${el.replace(' ', '-')}`)= el
 
 - const bikeItems = [{name:'orangez', url:'img/orange_bike.jpg'}, {name:'green devil', url:'img/green_bike.jpg'}, {name:'blue lagoon', url:'img/blue_bike.jpg'}, {name:'pink lady', url:'img/pink_bike.jpg'}, {name:'purple rain', url:'img/purple_bike.jpg'}, {name:'the mist', url:'img/grey_bike.jpg'}]
 

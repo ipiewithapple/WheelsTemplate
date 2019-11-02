@@ -1,36 +1,33 @@
 // Variables
 
-const menuBtn = document.querySelector('.menu');
-const headerNav = document.querySelector('.header__nav');
-const navLinks = document.querySelectorAll('.nav__link');
-const burger = document.querySelector('.menu__burger');
-const navbar = document.querySelector('#nav');
+const $menuBtn = $('.menu');
+const $headerNav = $('.header__nav');
+const $navLinks = $('.nav__link');
+const $burger = $('.menu__burger');
+const $navbar = $('#nav');
 
 // Header menu
 
-menuBtn.addEventListener('click', () => {
-  headerNav.classList.toggle('header__nav--opened');
-  burger.classList.toggle('menu__burger--close');
-})
-
-// Smooth scrolling
-
-navLinks.forEach((el) => {
-  el.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    const href = el.textContent.replace(' ', '-');
-    document.querySelector(`#${href}`).scrollIntoView({ block: "start", behavior: "smooth" });
-    burger.classList.remove('menu__burger--close');
-    headerNav.classList.remove('header__nav--opened');
-  })
+$menuBtn.on('click', () => {
+  $headerNav.toggleClass('header__nav--opened');
+  $burger.toggleClass('menu__burger--close');
 })
 
 // Sticky Navbar
 
-const sticky = navbar.offsetTop;
+const $sticky = $navbar.offset().top;
 
-window.addEventListener('scroll', () => {
-  window.pageYOffset > sticky ? navbar.classList.add('nav--sticky') : navbar.classList.remove('nav--sticky');
+$(window).on('scroll', () => {
+  $(window).scrollTop() > $sticky ? $navbar.addClass('nav--sticky') : $navbar.removeClass('nav--sticky');
 })
+
+// Smooth scrolling
+
+$navLinks.each(function () {
+  $(this).on('click', () =>{
+
+  })
+});
+
 
 
