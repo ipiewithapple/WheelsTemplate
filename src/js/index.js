@@ -25,12 +25,15 @@ $(window).on('scroll', () => {
 
 $navLinks.each(function () {
   $(this).on('click', (evt) => {
-    let dest = $($(this).attr('href')).offset().top;
-    console.log(dest);
-    evt.preventDefault();
-    $('html').animate({
-      scrollTop: dest
-    }, 'slow')
+    const dest = $($(this).attr('href'));
+    if (dest.length !== 0) {
+      evt.preventDefault();
+      $('html').animate({
+        scrollTop: dest.offset().top
+      }, 'slow')
+    } else {
+      return
+    }
     $headerNav.removeClass('header__nav--opened');
     $burger.removeClass('menu__burger--close');
   })
