@@ -28,7 +28,7 @@ html(lang="en")
     section.about-us#about-us
       .container
         h2.about-us__title About us
-        p.about-us__subtitle let’s talk about what makes your company great.
+        span.about-us__subtitle let’s talk about what makes your company great.
         .about-us__bike
         p.about-us__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           |Vestibulum sit amet odio molestie, rutrum lacus et, suscipit sem.
@@ -40,7 +40,7 @@ html(lang="en")
     section.statistics
       .container
         h2.statistics__title Some statistics
-        p.statistics__subtitle Showing what your company already acomplished is always a good selling point.
+        span.statistics__subtitle Showing what your company already acomplished is always a good selling point.
         ul.statistics__list
           li.statistics__item
             span.statistics__fact-count 409
@@ -54,14 +54,23 @@ html(lang="en")
     section.products#products
       .container
         h2.products__title Featured products
-        p.products__subtitle Your chance to shine
+        span.products__subtitle Your chance to shine
         .products__list
           +productItem
     section.team#our-team
       .container
         h2.team__title Meet the team
-        p.team__subtitle People who make the magic happen
+        span.team__subtitle People who make the magic happen
         ul.team__list
           +teamPersons
+    section.instagram#instagram
+      .container
+        h2.instagram__title #social showcase
+        span.instagram__subtitle Show your customers why your Instagram account is the one they should follow
+        ul.instagram__list
+          +photo
+        span.instagram__follow follow &nbsp;
+          a.instagram__follow-link(href="#") @wheelz
+          |&nbsp;on instagram
 
 

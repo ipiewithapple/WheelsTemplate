@@ -1,3 +1,4 @@
+//- Navigation List
 - const navItems = ["about us", "products", "our team", "instagram", "contact"]
 
 mixin nav
@@ -6,6 +7,7 @@ mixin nav
     each el in navItems
       li.nav__item: a.nav__link(href= `#${el.replace(' ', '-')}`)= el
 
+//- Products List
 - const bikeItems = [{name:'orangez', url:'img/orange_bike.jpg'}, {name:'green devil', url:'img/green_bike.jpg'}, {name:'blue lagoon', url:'img/blue_bike.jpg'}, {name:'pink lady', url:'img/pink_bike.jpg'}, {name:'purple rain', url:'img/purple_bike.jpg'}, {name:'the mist', url:'img/grey_bike.jpg'}]
 
 mixin productItem
@@ -16,6 +18,7 @@ mixin productItem
       span.product__price $399
       span.product__link Learn more
 
+//- Team Members
 - const teamPersons = [{name:'Ian', position:'Founder, CEO'}, {name:'Sarah', position:'Designer'}, {name:'Juan', position:'Office wizard'}]
 
 mixin teamPersons
@@ -24,3 +27,11 @@ mixin teamPersons
       img.team__photo(src=`img/${person.name.toLowerCase()}.png`, alt= person.name)
       span.team__name= person.name
       span.team__position= person.position
+
+//- Instagram Photos List
+-const photos = [{img: "image1.jpg", alt: "Bike in the village"}, {img: "image2.jpg", alt: "Red whell"}, {img: "image3.jpg", alt: "Bike trip"}, {img: "image1.jpg", alt: "Yellow bike"}]
+
+mixin photo
+  each photo in photos
+    li.instagram__item: img.instagram__photo(src= `img/${photo.img}` alt= photo.alt)
+

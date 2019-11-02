@@ -9,6 +9,7 @@
 
   &--sticky{
     z-index: 10;
+    position: fixed; // IE11 Support
     position: sticky;
     padding: 15px 10%;
     box-sizing: border-box;
