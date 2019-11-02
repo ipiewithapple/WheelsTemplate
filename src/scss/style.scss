@@ -22,6 +22,7 @@ body {
 }
 
 h2 {
+  margin-bottom: 10px;
   font-size: 1.9rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -45,11 +46,8 @@ section {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -60,3 +58,4 @@ section {
 @import "blocks/about-us.scss";
 @import "blocks/statistics.scss";
 @import "blocks/products.scss";
+@import "blocks/team.scss";

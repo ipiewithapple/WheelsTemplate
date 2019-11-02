@@ -30,10 +30,6 @@ navLinks.forEach((el) => {
 const sticky = navbar.offsetTop;
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('nav--sticky');
-  } else {
-    navbar.classList.remove('nav--sticky');
-  }
+  window.pageYOffset > sticky ? navbar.classList.add('nav--sticky') : navbar.classList.remove('nav--sticky');
 })
 

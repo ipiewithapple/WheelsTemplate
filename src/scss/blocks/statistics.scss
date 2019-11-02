@@ -1,4 +1,5 @@
 .statistics {
+  padding-bottom: 45px;
   color: $text-light;
   background: url("../img/bg_statistics.jpg") no-repeat center center;
   background-size: cover;
@@ -10,13 +11,13 @@
 }
 
 .statistics__subtitle {
-  margin-top: 20px;
-  margin-bottom: 85px;
+  margin-bottom: 50px;
 }
 
 .statistics__list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
   list-style: none;
 }
@@ -25,6 +26,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .statistics__fact-count {

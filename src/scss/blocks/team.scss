@@ -1,0 +1,29 @@
+.team {
+  padding-bottom: 45px;
+  background-color: $light;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+  list-style: none;
+}
+
+.team__item {
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team__name {
+  margin: 15px 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+}

@@ -28,7 +28,7 @@ html(lang="en")
     section.about-us#about-us
       .container
         h2.about-us__title About us
-        span.about-us__subtitle let’s talk about what makes your company great.
+        p.about-us__subtitle let’s talk about what makes your company great.
         .about-us__bike
         p.about-us__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           |Vestibulum sit amet odio molestie, rutrum lacus et, suscipit sem.
@@ -40,7 +40,7 @@ html(lang="en")
     section.statistics
       .container
         h2.statistics__title Some statistics
-        span.statistics__subtitle Showing what your company already acomplished is always a good selling point.
+        p.statistics__subtitle Showing what your company already acomplished is always a good selling point.
         ul.statistics__list
           li.statistics__item
             span.statistics__fact-count 409
@@ -54,8 +54,14 @@ html(lang="en")
     section.products#products
       .container
         h2.products__title Featured products
-        span.products__subtitle Your chance to shine
+        p.products__subtitle Your chance to shine
         .products__list
           +productItem
+    section.team
+      .container
+        h2.team__title Meet the team
+        p.team__subtitle People who make the magic happen
+        ul.team__list
+          +teamPersons
 
 

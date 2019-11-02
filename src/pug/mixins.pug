@@ -6,12 +6,21 @@ mixin nav
     each el in navItems
       li.nav__item: a.nav__link= el
 
-- const bikeItems = [{name:'orangez', url:'img/orange_bike.jpg'},{name:'green devil', url:'img/green_bike.jpg'},{name:'blue lagoon', url:'img/blue_bike.jpg'},{name:'pink lady', url:'img/pink_bike.jpg'},{name:'purple rain', url:'img/purple_bike.jpg'},{name:'the mist', url:'img/grey_bike.jpg'}]
+- const bikeItems = [{name:'orangez', url:'img/orange_bike.jpg'}, {name:'green devil', url:'img/green_bike.jpg'}, {name:'blue lagoon', url:'img/blue_bike.jpg'}, {name:'pink lady', url:'img/pink_bike.jpg'}, {name:'purple rain', url:'img/purple_bike.jpg'}, {name:'the mist', url:'img/grey_bike.jpg'}]
 
 mixin productItem
   each bike in bikeItems
     .product__item
-      img.product__img(src= bike.url)
+      img.product__img(src= bike.url alt= bike.name)
       span.product__bike= bike.name
       span.product__price $399
       span.product__link Learn more
+
+- const teamPersons = [{name:'Ian', position:'Founder, CEO'}, {name:'Sarah', position:'Designer'}, {name:'Juan', position:'Office wizard'}]
+
+mixin teamPersons
+  each person in teamPersons
+    li.team__item
+      img.team__photo(src=`img/${person.name.toLowerCase()}.png`, alt= person.name)
+      span.team__name= person.name
+      span.team__position= person.position
