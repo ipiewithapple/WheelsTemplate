@@ -33,3 +33,4 @@ window.addEventListener('scroll', () => {
   window.pageYOffset > sticky ? navbar.classList.add('nav--sticky') : navbar.classList.remove('nav--sticky');
 })
 
+
