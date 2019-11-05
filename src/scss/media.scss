@@ -1,0 +1,93 @@
+// Max 1365px
+
+@media (max-width: 1365px) {
+  .nav__list {
+    width: 80%;
+  }
+
+  .footer__wrapper {
+    margin-top: 70px;
+  }
+
+  .footer__list {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .footer__social,
+  .footer__map {
+    width: 50%;
+  }
+}
+
+// Max 1023px
+
+@media (max-width: 1023px) {
+  #nav {
+    display: none;
+  }
+
+  .header__mouse {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    right: 7%;
+    padding: 3%;
+    border: 3px #ffffff solid;
+    border-radius: 50px;
+    background-color: $dark;
+  }
+
+  .menu__title {
+    display: none;
+  }
+
+  .header__nav {
+    position: fixed;
+  }
+
+  .instagram__item {
+    width: 50%;
+  }
+}
+
+// Max 575px
+
+@media (max-width: 575px) {
+  .header {
+    padding: 30px 10% 100px;
+    height: auto;
+  }
+
+  .header__middle {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .container {
+    padding: 70px 10%;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .instagram__item {
+    width: 100%;
+  }
+
+  .footer__list {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .footer__social {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .footer__map {
+    width: 100%;
+  }
+}
