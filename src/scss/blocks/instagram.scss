@@ -1,7 +1,6 @@
-#instagram {
+.instagram__container {
   padding: 70px 10%;
 }
-
 .instagram__list {
   display: flex;
   justify-content: center;
@@ -21,6 +20,5 @@
 
   &-link {
     color: $text-dark;
-    // text-decoration: none;
   }
 }

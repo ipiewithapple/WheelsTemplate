@@ -1,6 +1,10 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800&display=swap');
 
+// FontAwesome
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+
 // Variables
 @import "variables.scss";
 
@@ -33,11 +37,6 @@ img {
   height: auto;
 }
 
-section {
-  padding: 70px 15%;
-  box-sizing: border-box;
-}
-
 // Other
 .logo {
   font-size: 1.9rem;
@@ -47,6 +46,8 @@ section {
 
 .container {
   margin: 0 auto;
+  padding: 70px 15%;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -60,3 +61,4 @@ section {
 @import "blocks/products.scss";
 @import "blocks/team.scss";
 @import "blocks/instagram.scss";
+@import "blocks/footer.scss";

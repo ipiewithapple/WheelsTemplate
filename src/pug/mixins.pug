@@ -1,5 +1,5 @@
 //- Navigation List
-- const navItems = ["about us", "products", "our team", "instagram", "contact"]
+- const navItems = ['about us', 'products', 'our team', 'instagram', 'contact']
 
 mixin nav
   span.logo wheels
@@ -29,9 +29,31 @@ mixin teamPersons
       span.team__position= person.position
 
 //- Instagram Photos List
--const photos = [{img: "image1.jpg", alt: "Bike in the village"}, {img: "image2.jpg", alt: "Red whell"}, {img: "image3.jpg", alt: "Bike trip"}, {img: "image1.jpg", alt: "Yellow bike"}]
+-const photos = [{img: 'image1.jpg', alt: 'Bike in the village'}, {img: 'image2.jpg', alt: 'Red whell'}, {img: 'image3.jpg', alt: 'Bike trip'}, {img: 'image1.jpg', alt: 'Yellow bike'}]
 
 mixin photo
   each photo in photos
     li.instagram__item: img.instagram__photo(src= `img/${photo.img}` alt= photo.alt)
 
+//- Footer List
+
+-const quickLinks = ['about us', 'products', 'our team', 'instagram', 'contact']
+-const quickLinks2 = ['faq', 'terms & conditions', 'something else', 'anything', 'your ideas', 'right here']
+
+mixin footerList
+  li.footer__item-title Quick links
+  each el in quickLinks
+    li.footer__item: a.footer__link.nav__link(href= `#${el.replace(' ', '-')}`)= el
+
+mixin footerList2
+  li.footer__item-title Quick links 2
+  each el in quickLinks2
+    li.footer__item: a.footer__link(href= `#`)= el
+
+//- Footer Social List
+
+-const socialIcons = ['fab fa-facebook-square', 'fab fa-linkedin-in', 'fab fa-instagram', 'fab fa-twitter']
+
+mixin socialList
+  each icon in socialIcons
+    li.footer__social-item: a.footer__social-link(href="#"): i(class= icon)

@@ -64,7 +64,7 @@ html(lang="en")
         ul.team__list
           +teamPersons
     section.instagram#instagram
-      .container
+      .container.instagram__container
         h2.instagram__title #social showcase
         span.instagram__subtitle Show your customers why your Instagram account is the one they should follow
         ul.instagram__list
@@ -72,5 +72,18 @@ html(lang="en")
         span.instagram__follow follow &nbsp;
           a.instagram__follow-link(href="#") @wheelz
           |&nbsp;on instagram
+    footer.footer#contact
+      .container
+        span.logo Wheels
+        .footer__wrapper
+          ul.footer__list
+            +footerList
+          ul.footer__list
+            +footerList2
+          .footer__social
+            span.footer__social-title let’s get social!
+            ul.footer__social-list
+              +socialList
+          img.footer__map(src="img/map.png" alt="Map")
 
 
